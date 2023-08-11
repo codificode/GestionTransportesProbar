@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestiontransportes.ClientesController">
+
+    <children>
+        <Button layoutX="41.0" layoutY="53.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="145.0" text="Agregar cliente">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="235.0" layoutY="53.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="145.0" text="Consultar cliente">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="235.0" layoutY="214.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="145.0" text="Listar clientes">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="41.0" layoutY="214.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="145.0" text="Borrar cliente">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="427.0" layoutY="53.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="145.0" text="Editar cliente">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="430.0" layoutY="251.0" mnemonicParsing="false" onAction="#volver" prefHeight="42.0" prefWidth="123.0" text="Volver">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+    </children>
+
+</AnchorPane>

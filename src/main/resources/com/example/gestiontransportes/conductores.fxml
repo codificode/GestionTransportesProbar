@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="conductoresid" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestiontransportes.ConductoresController">
+
+    <children>
+        <Button fx:id="botonPrueba" layoutX="41.0" layoutY="53.0" mnemonicParsing="false" onAction="#agregarConductor" prefHeight="80.0" prefWidth="145.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="235.0" layoutY="53.0" mnemonicParsing="false" onAction="#consultarConductor" prefHeight="80.0" prefWidth="145.0" text="Consultar conductor">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="235.0" layoutY="214.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="145.0" text="Listar conductores">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="41.0" layoutY="214.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="145.0" text="Borrar conductor">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Button fx:id="botonPrueba2" layoutX="427.0" layoutY="53.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="145.0" text="Editar conductor">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="430.0" layoutY="251.0" mnemonicParsing="false" onAction="#volver" prefHeight="42.0" prefWidth="123.0" text="Volver">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+      <Label fx:id="etiquetaprueba" layoutX="44.0" layoutY="322.0" prefHeight="42.0" prefWidth="138.0" />
+    </children>
+
+</AnchorPane>

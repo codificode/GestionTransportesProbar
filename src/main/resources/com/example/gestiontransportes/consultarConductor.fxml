@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestiontransportes.consultarConductorController">
+   <children>
+      <TextField id="textConsultarConductorDni" fx:id="textConsultarConductorDni" layoutX="45.0" layoutY="53.0" />
+      <TextField id="textConsultarConductorNombre" layoutX="225.0" layoutY="53.0" prefHeight="26.0" prefWidth="356.0" />
+      <TextField id="textConsultarConductorNacimiento" layoutX="44.0" layoutY="157.0" prefHeight="26.0" prefWidth="150.0" />
+      <TextField id="textConsultarConductorExperiencia" layoutX="225.0" layoutY="157.0" />
+      <TextField id="textConsultarConductorCarnet" layoutX="403.0" layoutY="157.0" />
+      <Button id="botonConsultarConductorConfirmar" layoutX="44.0" layoutY="249.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Confirmar" />
+      <Button id="botonConsultarConductorVolver" layoutX="403.0" layoutY="264.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="112.0" text="Volver" />
+      <Label layoutX="46.0" layoutY="28.0" prefHeight="26.0" prefWidth="126.0" text="DNI" />
+      <Label layoutX="225.0" layoutY="28.0" prefHeight="26.0" prefWidth="187.0" text="Nombre y apellidos" />
+      <Label layoutX="45.0" layoutY="132.0" prefHeight="26.0" prefWidth="136.0" text="Fecha de nacimiento" />
+      <Label layoutX="225.0" layoutY="129.0" prefHeight="26.0" prefWidth="136.0" text="Fecha obtención carnet" />
+      <Label layoutX="403.0" layoutY="129.0" prefHeight="26.0" prefWidth="136.0" text="Tipo de carnet (B ó AB)" />
+   </children>
+</AnchorPane>
