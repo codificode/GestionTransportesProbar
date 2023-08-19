@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.TextFlow?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestiontransportes.EliminarClientedeViajeController">
+    <children>
+        <TextFlow fx:id="textFlowClientesEliminarClientedeViaje" layoutX="418.0" layoutY="74.0" prefHeight="250.0" prefWidth="143.0" style="-fx-background-color: rgb(255,230,190);" />
+        <Label fx:id="labelFijaDniEliminarClientedeViaje" layoutX="20.0" layoutY="30.0" prefHeight="35.0" prefWidth="55.0" text="idViaje:" />
+        <Label fx:id="labelFijaNombreEliminarClientedeViaje" layoutX="203.0" layoutY="189.0" prefHeight="35.0" prefWidth="106.0" text="Matrícula Vehículo:" />
+        <Label fx:id="labelFijaFechaNacimientoEliminarClientedeViaje" layoutX="20.0" layoutY="69.0" prefHeight="35.0" prefWidth="55.0" text="Origen:" />
+        <Label fx:id="labelOrigenEliminarClientedeViaje" layoutX="75.0" layoutY="69.0" prefHeight="35.0" prefWidth="332.0" />
+        <Label layoutX="21.0" layoutY="104.0" prefHeight="35.0" prefWidth="68.0" text="Destino:" />
+        <Label fx:id="labelIdViajeEliminarClientedeViaje" layoutX="71.0" layoutY="30.0" prefHeight="35.0" prefWidth="98.0" />
+        <Label fx:id="labelAntiguedadEliminarClientedeViaje" layoutX="14.0" layoutY="231.0" prefHeight="35.0" prefWidth="117.0" text="Número de pasajeros:" />
+        <Label layoutX="205.0" layoutY="147.0" prefHeight="35.0" prefWidth="68.0" text="Kilómetros:" />
+        <Label layoutX="467.0" layoutY="54.0" text="Clientes:" />
+        <Button fx:id="buttonVolverEliminarClientedeViaje" layoutX="439.0" layoutY="343.0" mnemonicParsing="false" onAction="#volver" prefHeight="42.0" prefWidth="123.0" text="Volver">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Label layoutX="16.0" layoutY="189.0" prefHeight="35.0" prefWidth="86.0" text="DNI conductor:" />
+        <Label fx:id="labelDestinoEliminarClientedeViaje" layoutX="76.0" layoutY="104.0" prefHeight="35.0" prefWidth="332.0" />
+        <Label layoutX="10.0" layoutY="275.0" prefHeight="35.0" prefWidth="85.0" text="Estado del viaje:" />
+        <Label layoutX="18.0" layoutY="147.0" prefHeight="35.0" prefWidth="45.0" text="Fecha:" />
+        <Label fx:id="labelFechaEliminarClientedeViaje" layoutX="63.0" layoutY="147.0" prefHeight="35.0" prefWidth="123.0" />
+        <Label layoutX="246.0" layoutY="275.0" prefHeight="35.0" prefWidth="37.0" text="Tarifa:" />
+        <Label fx:id="labelMatriculaEliminarClientedeViaje" layoutX="306.0" layoutY="189.0" prefHeight="35.0" prefWidth="106.0" />
+        <Label fx:id="labelKilometrosEliminarClientedeViaje" layoutX="273.0" layoutY="147.0" prefHeight="35.0" prefWidth="91.0" />
+        <Label fx:id="labelDniConductorEliminarClientedeViaje" layoutX="98.0" layoutY="189.0" prefHeight="35.0" prefWidth="98.0" />
+        <Label fx:id="labelEstadoEliminarClientedeViaje" layoutX="107.0" layoutY="275.0" prefHeight="35.0" prefWidth="123.0" />
+        <Label fx:id="labelTarifaEliminarClientedeViaje" layoutX="291.0" layoutY="275.0" prefHeight="35.0" prefWidth="91.0" />
+        <Label layoutX="165.0" layoutY="30.0" prefHeight="35.0" prefWidth="98.0" text="Tipo de vehículo:" />
+        <Label fx:id="labelTipoEliminarClientedeViaje" layoutX="259.0" layoutY="30.0" prefHeight="35.0" prefWidth="151.0" />
+        <Label fx:id="labelNumeroPasajerosEliminarClientedeViaje" layoutX="135.0" layoutY="231.0" prefHeight="35.0" prefWidth="136.0" />
+        <Label layoutX="13.0" layoutY="329.0" prefHeight="28.0" prefWidth="68.0" text="DNI cliente:" />
+        <Button fx:id="buttonEliminarClienteEliminarClientedeViaje" onAction="#eliminarClientedeViaje" layoutX="265.0" layoutY="324.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="136.0" text="Eliminar cliente" />
+        <TextField fx:id="textFieldDniClienteEliminarClientedeViaje" layoutX="76.0" layoutY="325.0" prefHeight="35.0" prefWidth="159.0" />
+    </children>
+</AnchorPane>

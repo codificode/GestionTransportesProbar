@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestiontransportes.ConsultarViajeController">
+    <children>
+        <TextField fx:id="textFieldIdViajeConsultarViaje" layoutX="25.0" layoutY="47.0" prefHeight="26.0" prefWidth="106.0" />
+        <TextField fx:id="textFieldMatriculaConsultarViaje" layoutX="152.0" layoutY="47.0" prefHeight="26.0" prefWidth="106.0" />
+        <TextField fx:id="textFieldOrigenConsultarViaje" layoutX="23.0" layoutY="105.0" prefHeight="26.0" prefWidth="354.0" />
+        <TextField fx:id="textFieldDestinoConsultarViaje" layoutX="23.0" layoutY="166.0" prefHeight="26.0" prefWidth="354.0" />
+        <Button fx:id="buttonVerCoincidenciasConsultarViaje" layoutX="23.0" layoutY="325.0" mnemonicParsing="false" onAction="#verCoincidencias" prefHeight="50.0" prefWidth="150.0" text="Ver coincidencias" />
+        <Button fx:id="buttonVolverConsultarViaje" layoutX="452.0" layoutY="340.0" mnemonicParsing="false" onAction="#volver" prefHeight="36.0" prefWidth="112.0" text="Volver" />
+        <Label layoutX="25.0" layoutY="22.0" prefHeight="26.0" prefWidth="126.0" text="idViaje:" />
+        <Label layoutX="152.0" layoutY="22.0" prefHeight="26.0" prefWidth="106.0" text="Matrícula vehículo:" />
+        <Label layoutX="23.0" layoutY="80.0" prefHeight="26.0" prefWidth="136.0" text="Origen:" />
+        <Label layoutX="23.0" layoutY="138.0" prefHeight="26.0" prefWidth="136.0" text="Destino:" />
+        <Label layoutX="407.0" layoutY="22.0" prefHeight="26.0" prefWidth="136.0" text="Kilómetros:" />
+        <ChoiceBox fx:id="choiceBoxEstadoConsultarViaje" layoutX="22.0" layoutY="284.0" prefWidth="150.0" />
+        <Button fx:id="buttonConsultarSeleccionadoConsultarViaje" layoutX="221.0" layoutY="325.0" mnemonicParsing="false" onAction="#consultarViaje" prefHeight="50.0" prefWidth="150.0" text="Consultar seleccionado" />
+        <Label layoutX="22.0" layoutY="258.0" prefHeight="26.0" prefWidth="120.0" text="Estado del viaje:" />
+      <Label layoutX="283.0" layoutY="22.0" prefHeight="26.0" prefWidth="106.0" text="Tipo de vehículo:" />
+      <TextField fx:id="textFieldTipoConsultarViaje" layoutX="281.0" layoutY="47.0" prefHeight="26.0" prefWidth="106.0" />
+      <TextField fx:id="textFieldKilometrosConsultarViaje" layoutX="410.0" layoutY="47.0" />
+      <TextField fx:id="textFieldFechaConsultarViaje" layoutX="23.0" layoutY="226.0" />
+      <Label layoutX="23.0" layoutY="200.0" prefHeight="26.0" prefWidth="78.0" text="Fecha:" />
+      <ChoiceBox fx:id="choiceBoxCoincidenciasConsultarViaje" layoutX="402.0" layoutY="105.0" prefHeight="26.0" prefWidth="159.0" />
+      <Label layoutX="432.0" layoutY="80.0" prefHeight="26.0" prefWidth="99.0" text="Coincidencias:" />
+      <Label layoutX="213.0" layoutY="204.0" text="DNI conductor:" />
+      <TextField fx:id="textFieldDniConductorConsultarViaje" layoutX="211.0" layoutY="226.0" />
+    </children>
+</AnchorPane>

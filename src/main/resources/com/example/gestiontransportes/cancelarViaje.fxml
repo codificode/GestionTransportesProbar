@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestiontransportes.CancelarViajeController">
+    <Label layoutX="30.0" layoutY="53.0" prefHeight="26.0" prefWidth="47.0" text="idViaje:" />
+    <Button fx:id="buttonVolverCancelarViaje" onAction="#volver" layoutX="391.0" layoutY="290.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="135.0" text="Volver" />
+    <Button fx:id="buttonCancelarViajeCancelarViaje" onAction="#cancelarViaje" layoutX="86.0" layoutY="290.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="158.0" text="Cancelar viaje" />
+    <Label fx:id="labelIdViajeCancelarViaje" layoutX="93.0" layoutY="53.0" prefHeight="26.0" prefWidth="150.0" />
+    <Label fx:id="labelOrigenCancelarViaje" layoutX="86.0" layoutY="98.0" prefHeight="26.0" prefWidth="442.0" />
+    <Label fx:id="labelFechaCancelarViaje" layoutX="68.0" layoutY="187.0" prefHeight="26.0" prefWidth="150.0" />
+    <Label layoutX="30.0" layoutY="98.0" prefHeight="26.0" prefWidth="47.0" text="Origen:" />
+    <Label layoutX="30.0" layoutY="187.0" prefHeight="26.0" prefWidth="37.0" text="Fecha:" />
+   <Label layoutX="30.0" layoutY="144.0" prefHeight="26.0" prefWidth="47.0" text="Destino:" />
+   <Label fx:id="labelDestinoCancelarViaje" layoutX="77.0" layoutY="144.0" prefHeight="26.0" prefWidth="450.0" />
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.gestiontransportes.PedirDniConductorParaBorrarController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <TextField fx:id="textFieldDniPedirDniConductorParaBorrar" layoutX="75.0" layoutY="51.0" prefHeight="35.0" prefWidth="150.0" />
+        <Label layoutX="47.0" layoutY="56.0" prefHeight="26.0" prefWidth="28.0" text="DNI:" />
+        <Button fx:id="buttonBorrarPedirDniConductorParaBorrar" layoutX="69.0" layoutY="102.0" onAction="#borrarConductorporDni" mnemonicParsing="false" prefHeight="48.0" prefWidth="161.0" text="Ver antes de borrar" />
+        <Button fx:id="buttonVolverPedirDniConductorParaBorrar" layoutX="400.0" layoutY="303.0" onAction="#volver" mnemonicParsing="false" prefHeight="48.0" prefWidth="150.0" text="Volver" />
+    </children>
+
+</AnchorPane>

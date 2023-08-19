@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestiontransportes.DatosConductorController">
+   <children>
+      <TextFlow fx:id="textFlowViajesRealizadosDatosConductor" layoutX="432.0" layoutY="58.0" prefHeight="270.0" prefWidth="139.0" style="-fx-background-color: rgb(255,230,190);" />
+      <TextFlow fx:id="textFlowVehiculosConducidosDatosConductor" layoutX="283.0" layoutY="59.0" prefHeight="270.0" prefWidth="139.0" style="-fx-background-color: rgb(190,255,230);" />
+      <Label fx:id="labelFijaDniDatosConductor" layoutX="20.0" layoutY="30.0" prefHeight="35.0" prefWidth="28.0" text="DNI:" />
+      <Label fx:id="labelFijaNombreDatosConductor" layoutX="20.0" layoutY="83.0" prefHeight="23.0" prefWidth="55.0" text="Nombre:" />
+      <Label fx:id="labelNombreDatosConductor" layoutX="20.0" layoutY="101.0" prefHeight="35.0" prefWidth="190.0" />
+      <Label fx:id="labelFijaFechaNacimientoDatosConductor" layoutX="17.0" layoutY="146.0" prefHeight="35.0" prefWidth="115.0" text="Fecha de nacimiento:" />
+      <Label fx:id="labelFechaNacimientoDatosConductor" layoutX="134.0" layoutY="146.0" prefHeight="35.0" prefWidth="122.0" />
+      <Label layoutX="20.0" layoutY="196.0" prefHeight="35.0" prefWidth="37.0" text="Edad:" />
+      <Label layoutX="20.0" layoutY="246.0" prefHeight="35.0" prefWidth="89.0" text="Fecha de carnet:" />
+      <Label layoutX="19.0" layoutY="296.0" prefHeight="35.0" prefWidth="190.0" text="Años experiencia:" />
+      <Label fx:id="labelExperienciaDatosConductor" layoutX="114.0" layoutY="296.0" prefHeight="35.0" prefWidth="162.0" />
+      <Label fx:id="labelFechaCarnetDatosConductor" layoutX="110.0" layoutY="246.0" prefHeight="35.0" prefWidth="161.0" />
+      <Label layoutX="20.0" layoutY="346.0" prefHeight="35.0" prefWidth="190.0" text="Carnet:" />
+      <Label fx:id="labelCarnetDatosConductor" layoutX="65.0" layoutY="345.0" prefHeight="35.0" prefWidth="190.0" />
+      <Label fx:id="labelDniDatosConductor" layoutX="48.0" layoutY="30.0" prefHeight="35.0" prefWidth="190.0" />
+      <Label fx:id="labelEdadDatosConductor" layoutX="55.0" layoutY="196.0" prefHeight="35.0" prefWidth="154.0" />
+      <Label layoutX="300.0" layoutY="39.0" text="Vehículos conducidos" />
+      <Label layoutX="458.0" layoutY="39.0" text="Viajes realizados" />
+      <Button fx:id="buttonVolverDatosConductor" layoutX="440.0" layoutY="342.0" mnemonicParsing="false" onAction="#volver" prefHeight="42.0" prefWidth="123.0" text="Volver">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

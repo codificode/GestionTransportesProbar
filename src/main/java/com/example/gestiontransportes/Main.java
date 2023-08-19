@@ -27,13 +27,8 @@ public class Main extends Application {
         return stage;
     }
 
-    static void cambioTitulo(String titulo){
-       stage.setTitle(titulo);
-    }
-
-
     public static void main(String[] args) {
-        Gestion gestion = new Gestion();
+        Gestion gestion = Gestion.getInstance();
         gestion.cargarDatos();
         launch();
         gestion.guardarDatos();

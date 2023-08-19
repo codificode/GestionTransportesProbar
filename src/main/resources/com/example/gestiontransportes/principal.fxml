@@ -6,27 +6,27 @@
 
 <AnchorPane fx:id="principalid" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestiontransportes.PrincipalController">
    <children>
-      <Button id="botonPrincipalConductores" layoutX="41.0" layoutY="53.0" mnemonicParsing="false" onAction="#enviaraPantallaConductores" prefHeight="80.0" prefWidth="130.0" text="Conductores">
+      <Button fx:id="botonConductoresPrincipal" layoutX="41.0" layoutY="53.0" mnemonicParsing="false" onAction="#enviaraPantallaConductores" prefHeight="80.0" prefWidth="130.0" text="Conductores">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button id="botonPrincipalClientes" layoutX="235.0" layoutY="53.0" mnemonicParsing="false" onAction="#enviaraPantallaClientes" prefHeight="80.0" prefWidth="130.0" text="Clientes">
+      <Button fx:id="botonClientesPrincipal" layoutX="235.0" layoutY="53.0" mnemonicParsing="false" onAction="#enviaraPantallaClientes" prefHeight="80.0" prefWidth="130.0" text="Clientes">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button id="botonPrincipalViajes" layoutX="243.0" layoutY="217.0" mnemonicParsing="false" onAction="#enviaraPantallaVehiculos" prefHeight="80.0" prefWidth="130.0" text="Viajes">
+      <Button fx:id="botonViajesPrincipal" layoutX="243.0" layoutY="217.0" mnemonicParsing="false" onAction="#enviaraPantallaViajes" prefHeight="80.0" prefWidth="130.0" text="Viajes">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button id="botonPrincipalVehiculos" layoutX="41.0" layoutY="214.0" mnemonicParsing="false" onAction="#enviaraPantallaViajes" prefHeight="80.0" prefWidth="130.0" text="Vehículos">
+      <Button fx:id="botonVehiculosPrincipal" layoutX="41.0" layoutY="214.0" mnemonicParsing="false" onAction="#enviaraPantallaVehiculos" prefHeight="80.0" prefWidth="130.0" text="Vehículos">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button id="botonPrincipalCerrarPrograma" layoutX="427.0" layoutY="254.0" mnemonicParsing="false" onAction="#cerrarPrograma" prefHeight="42.0" prefWidth="123.0" text="Cerrar programa">
+      <Button fx:id="botonCerrarProgramaPrincipal" layoutX="427.0" layoutY="254.0" mnemonicParsing="false" onAction="#cerrarPrograma" prefHeight="42.0" prefWidth="123.0" text="Cerrar programa">
          <font>
             <Font size="14.0" />
          </font>

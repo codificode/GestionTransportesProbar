@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestiontransportes.AgregarVehiculoController">
+    <children>
+        <TextField fx:id="textFieldMatriculaAgregarVehiculo" layoutX="105.0" layoutY="28.0" />
+        <Button fx:id="botonConfirmarAgregarVehiculo" layoutX="46.0" layoutY="299.0" onAction="#confirmar" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Confirmar" />
+        <Button fx:id="botonVolverAgregarVehiculo" layoutX="441.0" layoutY="314.0" onAction="#volver" mnemonicParsing="false" prefHeight="36.0" prefWidth="112.0" text="Volver" />
+        <Label layoutX="46.0" layoutY="28.0" prefHeight="26.0" prefWidth="126.0" text="Matrícula:" />
+        <Label layoutX="41.0" layoutY="93.0" prefHeight="26.0" prefWidth="136.0" text="Tipo de vehículo:" />
+        <Label layoutX="43.0" layoutY="157.0" prefHeight="26.0" prefWidth="136.0" text="Clase:" />
+        <Label layoutX="44.0" layoutY="228.0" prefHeight="26.0" prefWidth="136.0" text="Fecha de fabricación:" />
+      <ChoiceBox fx:id="choiceBoxTipoAgregarVehiculo" layoutX="138.0" layoutY="93.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="choiceBoxClaseAgregarVehiculo" layoutX="84.0" layoutY="158.0" prefWidth="150.0" />
+      <TextField fx:id="textFieldFechaFabricacionAgregarVehiculo" layoutX="160.0" layoutY="229.0" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestiontransportes.DatosClienteController">
+    <children>
+        <TextFlow fx:id="textFlowViajesRealizadosDatosCliente" layoutX="432.0" layoutY="58.0" prefHeight="270.0" prefWidth="139.0" style="-fx-background-color: rgb(255,230,190);" />
+        <TextFlow fx:id="textFlowVehiculosViajadosDatosCliente" layoutX="283.0" layoutY="59.0" prefHeight="270.0" prefWidth="139.0" style="-fx-background-color: rgb(190,255,230);" />
+        <Label fx:id="labelFijaDniDatosCliente" layoutX="20.0" layoutY="30.0" prefHeight="35.0" prefWidth="28.0" text="DNI:" />
+        <Label fx:id="labelFijaNombreDatosCliente" layoutX="20.0" layoutY="89.0" prefHeight="23.0" prefWidth="55.0" text="Nombre:" />
+        <Label fx:id="labelNombreDatosCliente" layoutX="20.0" layoutY="107.0" prefHeight="35.0" prefWidth="190.0" />
+        <Label fx:id="labelFijaFechaNacimientoDatosCliente" layoutX="17.0" layoutY="152.0" prefHeight="35.0" prefWidth="115.0" text="Fecha de nacimiento:" />
+        <Label fx:id="labelFechaNacimientoDatosCliente" layoutX="132.0" layoutY="152.0" prefHeight="35.0" prefWidth="122.0" />
+        <Label layoutX="20.0" layoutY="202.0" prefHeight="35.0" prefWidth="37.0" text="Edad:" />
+        <Label fx:id="labelDniDatosCliente" layoutX="48.0" layoutY="30.0" prefHeight="35.0" prefWidth="190.0" />
+        <Label fx:id="labelEdadDatosCliente" layoutX="57.0" layoutY="202.0" prefHeight="35.0" prefWidth="154.0" />
+        <Label layoutX="279.0" layoutY="39.0" text="Vehículos en que ha viajado" />
+        <Label layoutX="458.0" layoutY="39.0" text="Viajes realizados" />
+        <Button fx:id="buttonVolverDatosCliente" layoutX="440.0" layoutY="342.0" mnemonicParsing="false" onAction="#volver" prefHeight="42.0" prefWidth="123.0" text="Volver">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

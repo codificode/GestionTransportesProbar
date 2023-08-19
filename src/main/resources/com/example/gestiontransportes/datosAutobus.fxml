@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestiontransportes.DatosAutobusController">
+    <children>
+        <TextFlow fx:id="textFlowClientesDatosAutobus" layoutX="424.0" layoutY="131.0" prefHeight="215.0" prefWidth="134.0" style="-fx-background-color: rgb(255,230,190);" />
+        <TextFlow fx:id="textFlowConductoresDatosAutobus" layoutX="249.0" layoutY="131.0" prefHeight="215.0" prefWidth="134.0" style="-fx-background-color: rgb(190,255,230);" />
+        <TextFlow fx:id="textFlowViajesDatosAutobus" layoutX="75.0" layoutY="131.0" prefHeight="215.0" prefWidth="134.0" style="-fx-background-color: rgb(240,240, 220);" />
+        <Label layoutX="20.0" layoutY="30.0" prefHeight="35.0" prefWidth="55.0" text="Matrícula:" />
+        <Label layoutX="215.0" layoutY="35.0" prefHeight="23.0" prefWidth="134.0" text="Tipo: Autobús" />
+        <Label layoutX="20.0" layoutY="69.0" prefHeight="35.0" prefWidth="115.0" text="Fecha de fabricación:" />
+        <Label fx:id="labelFechaFabricacionDatosAutobus" layoutX="135.0" layoutY="69.0" prefHeight="35.0" prefWidth="133.0" />
+        <Label layoutX="282.0" layoutY="69.0" prefHeight="35.0" prefWidth="68.0" text="Antigüedad:" />
+        <Label fx:id="labelMatriculaDatosAutobus" layoutX="75.0" layoutY="30.0" prefHeight="35.0" prefWidth="134.0" />
+        <Label fx:id="labelAntiguedadDatosAutobus" layoutX="356.0" layoutY="69.0" prefHeight="35.0" prefWidth="106.0" />
+        <Label layoutX="282.0" layoutY="113.0" text="Conductores" />
+        <Label layoutX="470.0" layoutY="113.0" text="Clientes" />
+        <Button fx:id="buttonVolverDatosAutobus" layoutX="448.0" layoutY="353.0" mnemonicParsing="false" onAction="#volver" prefHeight="42.0" prefWidth="123.0" text="Volver">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+      <Label layoutX="374.0" layoutY="38.0" prefHeight="18.0" prefWidth="34.0" text="Clase:" />
+
+      <Label layoutX="98.0" layoutY="113.0" text="Viajes realizados" />
+      <Label fx:id="labelClaseDatosAutobus" layoutX="412.0" layoutY="30.0" prefHeight="35.0" prefWidth="115.0" />
+    </children>
+</AnchorPane>

@@ -7,36 +7,48 @@
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestiontransportes.ViajesController">
 
     <children>
-        <Button layoutX="41.0" layoutY="53.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="145.0" text="Agregar viaje">
+        <Button fx:id="buttonAgregarViajeAutobusViajes" layoutX="41.0" layoutY="53.0" mnemonicParsing="false" onAction="#agregarViajeAutobus" prefHeight="67.0" prefWidth="155.0" text="Agregar viaje autobús">
             <font>
                 <Font size="14.0" />
             </font>
         </Button>
-        <Button layoutX="235.0" layoutY="53.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="145.0" text="Consultar viaje">
+        <Button fx:id="buttonAgregarViajeTaxiViajes" layoutX="41.0" layoutY="144.0" mnemonicParsing="false" onAction="#agregarViajeTaxi" prefHeight="67.0" prefWidth="155.0" text="Agregar Viaje taxi">
             <font>
                 <Font size="14.0" />
             </font>
         </Button>
-        <Button layoutX="235.0" layoutY="214.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="145.0" text="Listar viajes">
+        <Button fx:id="buttonConsultarViajeViajes" layoutX="48.0" layoutY="290.0" mnemonicParsing="false" onAction="#consultarViaje" prefHeight="67.0" prefWidth="126.0" text="Consultar viaje">
             <font>
                 <Font size="14.0" />
             </font>
         </Button>
-        <Button layoutX="41.0" layoutY="214.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="145.0" text="Borrar viaje">
+        <Button fx:id="buttonListarViajeViajes" layoutX="228.0" layoutY="290.0" mnemonicParsing="false" onAction="#listarViajes" prefHeight="67.0" prefWidth="126.0" text="Listar viajes">
             <font>
                 <Font size="14.0" />
             </font>
         </Button>
-        <Button layoutX="427.0" layoutY="53.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="145.0" text="Editar viaje">
+        <Button fx:id="buttonBorrarViajeViajes" layoutX="436.0" layoutY="144.0" mnemonicParsing="false" onAction="#cancelarViaje" prefHeight="67.0" prefWidth="134.0" text="Cancelar viaje">
             <font>
                 <Font size="14.0" />
             </font>
         </Button>
-        <Button layoutX="430.0" layoutY="251.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="123.0" text="Volver">
+        <Button fx:id="buttonEditarViajeViajes" layoutX="436.0" layoutY="53.0" mnemonicParsing="false" onAction="#editarViaje" prefHeight="67.0" prefWidth="134.0" text="Editar viaje">
             <font>
                 <Font size="14.0" />
             </font>
         </Button>
+        <Button fx:id="buttonVolverViajes" layoutX="445.0" layoutY="315.0" mnemonicParsing="false" onAction="#volver" prefHeight="42.0" prefWidth="126.0" text="Volver">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+      <Button fx:id="buttonAgregarClienteaViajeViajes" layoutX="228.0" layoutY="53.0" mnemonicParsing="false" onAction="#agregarClienteaViaje" prefHeight="67.0" prefWidth="170.0" text="Agregar cliente a viaje">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="buttonEliminarClientedeViajeViajes" layoutX="228.0" layoutY="144.0" mnemonicParsing="false" onAction="#eliminarClientedeViaje" prefHeight="67.0" prefWidth="170.0" text="Eliminar cliente de viaje">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
     </children>
-
 </AnchorPane>

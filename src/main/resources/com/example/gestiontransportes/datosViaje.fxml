@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestiontransportes.DatosViajeController">
+    <children>
+        <TextFlow fx:id="textFlowClientesDatosViaje" layoutX="418.0" layoutY="74.0" prefHeight="250.0" prefWidth="143.0" style="-fx-background-color: rgb(255,230,190);" />
+        <Label fx:id="labelFijaDniDatosViaje" layoutX="20.0" layoutY="30.0" prefHeight="35.0" prefWidth="55.0" text="idViaje:" />
+        <Label fx:id="labelFijaNombreDatosViaje" layoutX="205.0" layoutY="211.0" prefHeight="35.0" prefWidth="106.0" text="Matrícula Vehículo:" />
+        <Label fx:id="labelFijaFechaNacimientoDatosViaje" layoutX="20.0" layoutY="69.0" prefHeight="35.0" prefWidth="55.0" text="Origen:" />
+        <Label fx:id="labelOrigenDatosViaje" layoutX="75.0" layoutY="69.0" prefHeight="35.0" prefWidth="332.0" />
+        <Label layoutX="20.0" layoutY="113.0" prefHeight="35.0" prefWidth="68.0" text="Destino:" />
+        <Label fx:id="labelIdViajeDatosViaje" layoutX="71.0" layoutY="30.0" prefHeight="35.0" prefWidth="98.0" />
+        <Label fx:id="labelAntiguedadDatosViaje" layoutX="18.0" layoutY="264.0" prefHeight="35.0" prefWidth="117.0" text="Número de pasajeros:" />
+        <Label layoutX="207.0" layoutY="162.0" prefHeight="35.0" prefWidth="68.0" text="Kilómetros:" />
+        <Label layoutX="467.0" layoutY="54.0" text="Clientes:" />
+        <Button fx:id="buttonVolverDatosViaje" layoutX="439.0" layoutY="343.0" mnemonicParsing="false" onAction="#volver" prefHeight="42.0" prefWidth="123.0" text="Volver">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+      <Label layoutX="18.0" layoutY="211.0" prefHeight="35.0" prefWidth="86.0" text="DNI conductor:" />
+      <Label fx:id="labelDestinoDatosViaje" layoutX="75.0" layoutY="113.0" prefHeight="35.0" prefWidth="332.0" />
+      <Label layoutX="14.0" layoutY="316.0" prefHeight="35.0" prefWidth="85.0" text="Estado del viaje:" />
+      <Label layoutX="20.0" layoutY="162.0" prefHeight="35.0" prefWidth="45.0" text="Fecha:" />
+      <Label fx:id="labelFechaDatosViaje" layoutX="65.0" layoutY="162.0" prefHeight="35.0" prefWidth="123.0" />
+      <Label layoutX="250.0" layoutY="316.0" prefHeight="35.0" prefWidth="37.0" text="Tarifa:" />
+      <Label fx:id="labelMatriculaDatosViaje" layoutX="308.0" layoutY="211.0" prefHeight="35.0" prefWidth="106.0" />
+      <Label fx:id="labelKilometrosDatosViaje" layoutX="276.0" layoutY="162.0" prefHeight="35.0" prefWidth="91.0" />
+      <Label fx:id="labelDniConductorDatosViaje" layoutX="100.0" layoutY="211.0" prefHeight="35.0" prefWidth="98.0" />
+      <Label fx:id="labelEstadoDatosViaje" layoutX="111.0" layoutY="316.0" prefHeight="35.0" prefWidth="123.0" />
+      <Label fx:id="labelTarifaDatosViaje" layoutX="295.0" layoutY="316.0" prefHeight="35.0" prefWidth="91.0" />
+      <Label layoutX="165.0" layoutY="30.0" prefHeight="35.0" prefWidth="98.0" text="Tipo de vehículo:" />
+      <Label fx:id="labelTipoDatosViaje" layoutX="259.0" layoutY="30.0" prefHeight="35.0" prefWidth="151.0" />
+      <Label fx:id="labelNumeroPasajerosDatosViaje" layoutX="139.0" layoutY="264.0" prefHeight="35.0" prefWidth="136.0" />
+    </children>
+</AnchorPane>

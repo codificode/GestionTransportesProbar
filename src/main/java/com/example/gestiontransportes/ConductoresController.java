@@ -1,54 +1,63 @@
 package com.example.gestiontransportes;
 
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.text.BreakIterator;
 
 public class ConductoresController {
+/*
+    @FXML
+    Button agregarConductor;
 
     @FXML
-    String textoBoton;
-
+    Button editarConductor;
+*/
     @FXML
-    Button botonPrueba;
-
-    @FXML
-    Button botonPrueba2;
-
-    @FXML
-    Label etiquetaprueba;
-
-    BotonModel botonModel;
-
-    public void setBotonModel(BotonModel botonModel) {
-        this.botonModel = botonModel;
-    }
-
-
-    @FXML
-    public void cambiartextoprueba(String texto) {
-        etiquetaprueba.setText("cambio 1");
-        botonPrueba.setText("cambio 1");
-        botonPrueba2.setText("cambio 1");
-        System.out.println("Se ejecutó cambiartextoprueba");
+    public void agregarConductor() throws IOException {
+       ControlPantallas controlPantallas = ControlPantallas.getInstance();
+       controlPantallas.cambioRootyTitulo("agregarConductor");
     }
 
     @FXML
-    protected void agregarConductor(){
-       //ControlPantallas.cambioRootyTitulo("agregarConductor");
-        //botonPrueba.setText("cambio 2");
-        etiquetaprueba.setText("cambio 1");
+    protected void consultarConductor() throws IOException{
+        ControlPantallas controlPantallas = ControlPantallas.getInstance();
+        controlPantallas.cambioRootyTitulo("consultarConductor");
     }
 
     @FXML
-    protected void consultarConductor() {
-        //botonPrueba.setText("cambio 3");
+    protected void editarConductor() throws IOException{
+        ControlPantallas controlPantallas = ControlPantallas.getInstance();
+        controlPantallas.cambioRootyTitulo("pedirDniConductorParaEditar");
+    }
+
+    @FXML
+    protected void borrarConductor() throws IOException{
+        ControlPantallas controlPantallas = ControlPantallas.getInstance();
+        controlPantallas.cambioRootyTitulo("pedirDniConductorParaBorrar");
+    }
+
+    @FXML
+    protected void listarConductor(ActionEvent event) throws IOException{
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("listaConductores.fxml"));
+        Parent root = loader.load();
+
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("Gestión pantallas - Listado de conductores");
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+
+        ListaConductoresController controller = loader.getController();
+        controller.listarConductores();
 
     }
 

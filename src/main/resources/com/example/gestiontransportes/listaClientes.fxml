@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.TextFlow?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.gestiontransportes.ListaClientesController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <TextFlow fx:id="textFlowListadoClientesListaClientes" layoutX="60.0" layoutY="60.0" prefHeight="322.0" prefWidth="202.0" style="-fx-background-color: rgb(255,230,190);" />
+        <Label layoutX="97.0" layoutY="33.0" prefHeight="26.0" prefWidth="127.0" text="Listado de Clientes" />
+        <Button fx:id="buttonVolverListaClientes" onAction="#volver" layoutX="385.0" layoutY="294.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="148.0" text="Volver" />
+    </children>
+</AnchorPane>

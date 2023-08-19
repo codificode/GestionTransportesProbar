@@ -21,14 +21,6 @@ public class PrincipalController {
         control.cambioRootyTitulo("conductores");
     }
 
-
-    protected void metodoParaCambiarTexto() throws IOException{
-        ConductoresController conductoresController = cargarControlador("Conductores.fxml");
-        Platform.runLater(() -> {
-            conductoresController.cambiartextoprueba("SOY LA PRUEBA");
-        });
-    }
-
     @FXML
     protected void enviaraPantallaClientes() throws IOException {
         control.cambioRootyTitulo("clientes");
@@ -49,12 +41,5 @@ public class PrincipalController {
         Platform.exit();
     }
 
-    private ConductoresController cargarControlador(String fxml) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource(fxml));
-        Parent root = loader.load();
-        principalid.getChildren().setAll(root);
 
-        ConductoresController controller = loader.getController();
-        return controller;
-    }
 }
