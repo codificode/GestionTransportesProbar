@@ -379,18 +379,23 @@ public final class Gestion {
         if (fechaFabricacion==null){
             coincideFechaFabricacion=true;
         }
-System.out.println(", "+coincideMatricula+coincideTipo+coincideClase+coincideFechaFabricacion);
+
         // Si el tipo es null (no se ha introducido)
         if (tipo == null){
             try {
                 for (Vehiculo vehiculo: listaVehiculos){
                     boolean coincideMatricula1 = false;
                     boolean coincideFechaFabricacion1 = false;
+                    boolean coincideClase1 = false;
+
                     if (matricula.equals("")){
                         coincideMatricula1=true;
                     }
                     if (fechaFabricacion==null){
                         coincideFechaFabricacion1=true;
+                    }
+                    if (clase == null){
+                        coincideClase1=true;
                     }
                     if(matricula.equals(vehiculo.getMatricula())){
                         coincideMatricula1=true;
@@ -398,7 +403,13 @@ System.out.println(", "+coincideMatricula+coincideTipo+coincideClase+coincideFec
                     if (fechaFabricacion==vehiculo.getFechaFabricacion()){
                         coincideFechaFabricacion1=true;
                     }
-                    if (coincideMatricula1 && coincideFechaFabricacion1){
+                    if(vehiculo.getTipo()== Vehiculo.Tipo.AUTOBUS){
+                        Autobus autobus = (Autobus) vehiculo;
+                        if (autobus.getClase()==clase){
+                            coincideClase1=true;
+                        }
+                    }
+                    if (coincideMatricula1 && coincideFechaFabricacion1 && coincideClase1){
                         listaCoincidencias.add(vehiculo.getMatricula());
                     }
                 }
@@ -414,6 +425,7 @@ System.out.println(", "+coincideMatricula+coincideTipo+coincideClase+coincideFec
                 for (Vehiculo vehiculo: listaVehiculos){
                     boolean coincideMatricula1 = false;
                     boolean coincideFechaFabricacion1 = false;
+                    boolean coincideClase1 = false;
 
                     if (matricula.equals("")){
                         coincideMatricula1=true;
@@ -421,13 +433,16 @@ System.out.println(", "+coincideMatricula+coincideTipo+coincideClase+coincideFec
                     if (fechaFabricacion==null){
                         coincideFechaFabricacion1=true;
                     }
+                    if (clase == null){
+                        coincideClase1=true;
+                    }
                     if(matricula.equals(vehiculo.getMatricula())){
                         coincideMatricula1=true;
                     }
                     if (fechaFabricacion==vehiculo.getFechaFabricacion()){
                         coincideFechaFabricacion1=true;
                     }
-                    if (coincideMatricula1 && coincideFechaFabricacion1 && vehiculo.getTipo()== Vehiculo.Tipo.TAXI){
+                    if (coincideMatricula1 && coincideFechaFabricacion1 && vehiculo.getTipo()== Vehiculo.Tipo.TAXI && coincideClase1){
                         listaCoincidencias.add(vehiculo.getMatricula());
                     }
                 }
@@ -443,6 +458,7 @@ System.out.println(", "+coincideMatricula+coincideTipo+coincideClase+coincideFec
                 for (Vehiculo vehiculo: listaVehiculos){
                     boolean coincideMatricula1 = false;
                     boolean coincideFechaFabricacion1 = false;
+                    boolean coincideTipo1 = false;
                     boolean coincideClase1 = false;
 
                     if (matricula.equals("")){
@@ -451,6 +467,9 @@ System.out.println(", "+coincideMatricula+coincideTipo+coincideClase+coincideFec
                     if (fechaFabricacion==null){
                         coincideFechaFabricacion1=true;
                     }
+                    if (clase==null){
+                        coincideClase1=true;
+                    }
                     if(matricula.equals(vehiculo.getMatricula())){
                         coincideMatricula1=true;
                     }
@@ -458,12 +477,13 @@ System.out.println(", "+coincideMatricula+coincideTipo+coincideClase+coincideFec
                         coincideFechaFabricacion1=true;
                     }
                     if (vehiculo.getTipo()== Vehiculo.Tipo.AUTOBUS){
+                        coincideTipo1=true;
                         Autobus autobus = (Autobus)vehiculo;
                         if (autobus.getClase()==clase){
                             coincideClase1=true;
                         }
                     }
-                    if (coincideMatricula1 && coincideFechaFabricacion1 && coincideClase1){
+                    if (coincideMatricula1 && coincideFechaFabricacion1 && coincideClase1 && coincideTipo1){
                         listaCoincidencias.add(vehiculo.getMatricula());
                     }
                 }
@@ -892,16 +912,14 @@ System.out.println(", "+coincideMatricula+coincideTipo+coincideClase+coincideFec
     }
 
     public Vehiculo.Tipo comprobarTipoVehiculo(String matricula){
-        try{
+        Vehiculo.Tipo tipo = null;
             for (Vehiculo vehiculo: listaVehiculos) {
                 if (vehiculo.getMatricula().equals(matricula)){
                     return vehiculo.getTipo();
                 }
             }
-        } catch (Exception e){
-                return null;
-            }
-        return null;
+            return tipo;
+
     }
 
 

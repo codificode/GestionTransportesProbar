@@ -75,7 +75,6 @@ public class ConsultarVehiculoController {
                 choiceBoxCoincidenciasConsultarVehiculo.getItems().add(coincidencia);
             }
 
-            System.out.println(coincidencias);
 /*
          catch (Exception e ){
             controlPantallas.mostrarPopup1(textFieldMatriculaConsultarVehiculo, "Errores al introducir los datos");
@@ -87,13 +86,16 @@ public class ConsultarVehiculoController {
     @FXML
     public void consultarVehiculo (ActionEvent event) throws IOException {
         ArrayList<Vehiculo> listadoVehiculos = gestion.getListaVehiculos();
+        /*
         for (Vehiculo vehiculo:listadoVehiculos){
             System.out.println(vehiculo.toString());
         }
 
+         */
 
-        if (gestion.comprobarTipoVehiculo(matricula)== Vehiculo.Tipo.AUTOBUS){
-            System.out.println("consultar vehiculo tipo autobus");
+        //System.out.println(gestion.comprobarTipoVehiculo(matricula));
+
+        if (gestion.comprobarTipoVehiculo(String.valueOf(choiceBoxCoincidenciasConsultarVehiculo.getValue())) == Vehiculo.Tipo.AUTOBUS){
             FXMLLoader loader = new FXMLLoader(getClass().getResource("datosAutobus.fxml"));
             Parent root = loader.load();
 
@@ -106,7 +108,6 @@ public class ConsultarVehiculoController {
             DatosAutobusController controller = loader.getController();
             controller.mostrarDatos(choiceBoxCoincidenciasConsultarVehiculo.getValue().toString());
         } else {
-            System.out.println("consultarvehiculotipotaxi");
             FXMLLoader loader = new FXMLLoader(getClass().getResource("datosTaxi.fxml"));
             Parent root = loader.load();
 

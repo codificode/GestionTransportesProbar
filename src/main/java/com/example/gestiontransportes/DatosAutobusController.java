@@ -40,7 +40,6 @@ public class DatosAutobusController {
 
         labelMatriculaDatosAutobus.setText(datos[0]);
         labelFechaFabricacionDatosAutobus.setText(datos[1]);
-        labelTipoDatosAutobus.setText(datos[2]);
         labelClaseDatosAutobus.setText(datos[3]);
         labelAntiguedadDatosAutobus.setText(datos[4]);
 

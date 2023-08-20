@@ -33,6 +33,6 @@ public class ListaVehiculosController {
     @FXML
     public void volver() throws IOException {
         ControlPantallas control = new ControlPantallas();
-        control.cambioRootyTitulo("Vehiculos");
+        control.cambioRootyTitulo("vehiculos");
     }
 }

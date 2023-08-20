@@ -32,6 +32,6 @@ public class ListaViajesController {
     @FXML
     public void volver() throws IOException {
         ControlPantallas control = new ControlPantallas();
-        control.cambioRootyTitulo("Viajes");
+        control.cambioRootyTitulo("viajes");
     }
 }

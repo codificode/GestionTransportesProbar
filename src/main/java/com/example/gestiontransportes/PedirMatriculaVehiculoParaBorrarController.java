@@ -45,6 +45,6 @@ public class PedirMatriculaVehiculoParaBorrarController {
     @FXML
     public void volver() throws IOException {
         ControlPantallas control = new ControlPantallas();
-        control.cambioRootyTitulo("Vehiculoes");
+        control.cambioRootyTitulo("vehiculos");
     }
 }
